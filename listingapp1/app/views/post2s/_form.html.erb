@@ -12,6 +12,10 @@
   <% end %>
 
   <div class="field">
+  <%= form.label :name %>
+  <%= form.select :author_id, Author.all.map {|c| [c.name, c.id]}, include_blank: true %>
+
+  <div class="field">
     <%= form.label :sno %>
     <%= form.number_field :sno %>
   </div>

@@ -1,0 +1,8 @@
+<h1> Post2s by <%= params[:author_name] %></h1>
+<tbody><% @post2s.each do |post| %>
+    <tr>
+      <td><%= post.author.name %></td><br>
+      <td><%= post.title %></td>
+    </tr>
+  <% end %>
+</tbody>
