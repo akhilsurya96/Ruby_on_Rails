@@ -69,6 +69,6 @@ class Post2sController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post2_params
-      params.require(:post2).permit(:sno, :title, :genere, :description, :npages)
+      params.require(:post2).permit(:author_id, :author_name, :sno, :title, :genere, :description, :npages)
     end
 end
